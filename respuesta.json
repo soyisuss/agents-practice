@@ -1,0 +1,105 @@
+{
+  "messages": [
+    {
+      "type": "human",
+      "content": "What's the weather in San Francisco?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "id": "b3fe167b-9e10-47db-ae0b-5d796fe2dee0"
+    },
+    {
+      "type": "ai",
+      "content": "",
+      "additional_kwargs": {
+        "refusal": null
+      },
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 45,
+          "prompt_tokens": 287,
+          "total_tokens": 332,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cached_tokens": 256
+          },
+          "prompt_cache_hit_tokens": 256,
+          "prompt_cache_miss_tokens": 31
+        },
+        "model_provider": "deepseek",
+        "model_name": "deepseek-v4-flash",
+        "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+        "id": "ebe3bd5a-0244-44db-a380-a0e498ac741a",
+        "finish_reason": "tool_calls",
+        "logprobs": null
+      },
+      "id": "lc_run--019f0110-3e2a-7883-acdb-91df3d911643-0",
+      "tool_calls": [
+        {
+          "name": "get_weather",
+          "args": {
+            "city": "San Francisco"
+          },
+          "id": "call_00_RVRnvDXm4WRH3zU7DlPo9130",
+          "type": "tool_call"
+        }
+      ],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 287,
+        "output_tokens": 45,
+        "total_tokens": 332,
+        "input_token_details": {
+          "cache_read": 256
+        },
+        "output_token_details": {}
+      }
+    },
+    {
+      "type": "tool",
+      "content": "The weather in San Francisco is sunny.",
+      "name": "get_weather",
+      "id": "00a69fef-3f82-4286-a4ef-d2adaab4cf29",
+      "tool_call_id": "call_00_RVRnvDXm4WRH3zU7DlPo9130"
+    },
+    {
+      "type": "ai",
+      "content": "The weather in San Francisco is currently **sunny**! ☀️",
+      "additional_kwargs": {
+        "refusal": null
+      },
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 15,
+          "prompt_tokens": 350,
+          "total_tokens": 365,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cached_tokens": 256
+          },
+          "prompt_cache_hit_tokens": 256,
+          "prompt_cache_miss_tokens": 94
+        },
+        "model_provider": "deepseek",
+        "model_name": "deepseek-v4-flash",
+        "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+        "id": "398d425f-53ca-44e4-ab00-a6a43b3fd71c",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "id": "lc_run--019f0110-4213-7860-a4b4-06dcb41129bd-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 350,
+        "output_tokens": 15,
+        "total_tokens": 365,
+        "input_token_details": {
+          "cache_read": 256
+        },
+        "output_token_details": {}
+      }
+    }
+  ]
+}
