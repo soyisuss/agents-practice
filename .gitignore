@@ -38,3 +38,6 @@ Thumbs.db
 .ruff_cache/
 .pyright/
 *.log
+.langgraph_api/
+
+.vscode/
