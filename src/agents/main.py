@@ -29,10 +29,3 @@ agent = create_agent(
     tools=[get_weather],
     system_prompt="You are a helpful assistant.",
 )
-
-result = agent.invoke(
-    {"messages": [
-        {"role": "user", "content": "What's the weather in San Francisco?"}]}
-)
-
-print(result["messages"][-1].content)

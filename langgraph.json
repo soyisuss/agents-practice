@@ -1,7 +1,8 @@
 {
     "dependencies": ["."],
     "graphs": {
-        "agent": "src/agents/main.py:agent"
+        "agent": "src/agents/main.py:agent",
+        "simple_memory": "src/agents/simple_memory.py:agent"
     },
     "env": ".env"
 }
