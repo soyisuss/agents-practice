@@ -3,7 +3,8 @@
     "graphs": {
         "agent": "src/agents/main.py:agent",
         "simple_memory": "src/agents/simple_memory.py:agent",
-        "messages": "src/agents/memory_messages.py:agent"
+        "messages": "src/agents/memory_messages.py:agent",
+        "booking": "src/agents/support/nodes/booking/node.py:agent"
     },
     "env": ".env"
 }
