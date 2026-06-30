@@ -5,7 +5,9 @@
         "simple_memory": "src/agents/simple_memory.py:agent",
         "messages": "src/agents/memory_messages.py:agent",
         "booking": "src/agents/support/nodes/booking/node.py:agent",
-        "code_review": "src/agents/code_review.py:agent"
+        "code_review": "src/agents/code_review.py:agent",
+        "orchestrator": "src/agents/orchestrator.py:agent",
+        "evaluator": "src/agents/evaluator.py:agent"
     },
     "env": ".env"
 }
